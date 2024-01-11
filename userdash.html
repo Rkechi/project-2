@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard - Agro Investment</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/userdash.css">
+	<link rel="stylesheet" href="./fontawesome/css/all.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/markets.css">
+
+</head>
+<style>
+	
+</style>
+
+<body >
+<nav>  
+		<div class="container-fluid cbg ">
+			<div class="row">
+				<div class="navv col-12  d-flex align-items-center  justify-content-space-between py-3 ">
+					<div class="col-3 navlogo ms-2 ">
+						<a href="index.html"><img src="./images/agrolight.png" alt="" width="120px" height="55px"></a>
+					</div>
+
+					<!-- <div class="col-md-6 navtwo ">
+						<a class="btn bara" id="" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><span class="bars " style="color: #01c38d;"><i class="fa-solid fa-bars"></i></span></a>
+						<span style="font-size:30px;cursor:pointer" onclick="toggleNav()">&#9776; </span>
+						<input type="text" class="form-style d-none d-md-inline-block" placeholder="Search                           &#xF002;" name="name">
+					</div> -->
+					<!-- <div class="col-6 group">
+						<svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+							<g>
+								<path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+							</g>
+						</svg>
+						<input placeholder="Search Customer" type="search" class="input">
+					</div> -->
+					<div class="col-3  navthree d-flex align-items-center justify-content-center ">
+						<button type="button" class="btn position-relative me-md-2" style="background-color: #01c38d;" >
+							<i class="fa-regular fa-bell"></i>
+							<span class="position-absolute top-0 start-100 translate-middle p-2 text-white  border border-light rounded-circle">
+							  <span class="visually-hidden">New alerts</span>
+							</span>
+						</button>
+						<button type="button" class="btn position-relative me-md-2" style="background-color: #01c38d;" >
+							<i class="fa-solid fa-message"></i>
+							<span class="position-absolute top-0 start-100 translate-middle p-2 text-white border border-light rounded-circle">
+							  <span class="visually-hidden">New alerts</span>
+							</span>
+						</button>
+						<button type="button" class="btn position-relative me-md-2" style="background-color: #01c38d;" >
+							<i class="fa-regular fa-bell"></i>
+							<span class="position-absolute top-0 start-100 translate-middle p-2 text-white border border-light rounded-circle">
+							  <span class="visually-hidden">New alerts</span>
+							</span>
+						</button>
+						<a href="" class="welc"><span class=" text-white me-md-2"><i class="fa-solid fa-circle-user"></i> Hello, Victor <i class="fa-solid fa-caret-down"></i></span></a> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	
+	<div class="tabarea d-flex">
+
+		<div class="tab col pt-2 "   >
+			<button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen"><i class="fa-solid fa-border-all"></i>&nbsp; &nbsp;  Dashboard</button>
+			
+			<button class="tablinks" onclick="openCity(event, 'Tokyo2')"><i class="fa-solid fa-chart-line"></i>&nbsp; &nbsp;  Invest </button>
+			<button class="tablinks" onclick="openCity(event, 'Paris')"><i class="fa-solid fa-solid fa-money-bill-transfer"></i>&nbsp; &nbsp;  Deposit</button>
+			<button class="tablinks" onclick="openCity(event, 'Too')"><i class="fa-solid fa-headset"></i> &nbsp; &nbsp; Support</button>
+			<button class="tablinks" onclick="openCity(event, 'Owerri')"><i class="fa-solid fa-user-gear "></i>&nbsp; &nbsp;  Account</button>
+			<a href="../index.html" class="btn"><i class="fa-solid fa-right-from-bracket"></i> &nbsp; &nbsp; &nbsp;LOGOUT</a>
+			<button class="tablinks" onclick="openCity(event, 'Ubo')">&nbsp; &nbsp;  </button>
+			
+			
+			
+
+
+		</div>
+		  
+		<div id="London" class="col-10 tabcontent ">
+			<div class="container pt-5">
+				<div class="row">
+
+					<!-- Earnings (Monthly) Card Example -->
+					<div class="col-xl-3 col-md-6 mb-4">
+						<div class="card border-left-primary shadow h-100 py-2">
+							<div class="card-body">
+								<div class="row no-gutters align-items-center">
+									<div class="col mr-2">
+										<div class="  text-primary text-uppercase mb-1" style="font-size: 20px; font-weight: 700;">
+											WALLET BALANCE
+										</div>
+										<div class="h5 mb-0 font-weight-bold text-gray-800">&#x20A6;150,000</div>
+									</div>
+									<div class="col-auto">
+										<i class="fas fa-wallet fa-2x text-gray-300"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Earnings (Monthly) Card Example -->
+					<div class="col-xl-3 col-md-6 mb-4">
+						<div class="card border-left-success shadow h-100 py-2">
+							<div class="card-body">
+								<div class="row no-gutters align-items-center">
+									<div class="col mr-2">
+										<div class="  text-success text-uppercase mb-1" style="font-size: 20px; font-weight: 700;">
+											RUNNING INVESTMENTS
+										</div>
+										<div class="h5 mb-0 font-weight-bold text-gray-800">&#x20A6;267,800</div>
+									</div>
+									<div class="col-auto">
+										<span class="text-gray-300 h1">&#x20A6;</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Earnings (Monthly) Card Example -->
+					<div class="col-xl-3 col-md-6 mb-4">
+						<div class="card border-left-info shadow h-100 py-2">
+							<div class="card-body">
+								<div class="row no-gutters align-items-center">
+									<div class="col mr-2">
+										<div class="  text-info text-uppercase mb-1" style="font-size: 18px; font-weight: 700;">
+											ACTIVE PROFITS
+										</div>
+										<div class="row no-gutters align-items-center">
+											<div class="col-auto">
+												<div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">30%</div>
+											</div>
+											<div class="col">
+												<div class="progress progress-sm mr-2">
+													<div class="progress-bar bg-info" role="progressbar"
+														style="width: 30%" aria-valuenow="50" aria-valuemin="0"
+														aria-valuemax="100"></div>
+												</div>
+												
+											</div>
+											<p class="pt-md-3"><span class="fa fa-calendar"></span> 6/07/2021</p>
+										</div>
+									</div>
+									<div class="col-auto">
+										<i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Pending Requests Card Example -->
+					<div class="col-xl-3 col-md-6 mb-4">
+						<div class="card border-left-warning shadow h-100 py-2">
+							<div class="card-body">
+								<div class="row no-gutters align-items-center">
+									<div class="col mr-2">
+										<div class="  text-warning text-uppercase mb-1" style="font-size: 20px; font-weight: 700;">
+											MARKET OPTIONS
+										</div>
+										<div class="h5 mb-0 font-weight-bold text-gray-800">6</div>
+									</div>
+									<div class="col-auto">
+										<i class="fa-brands fa-pagelines fa-2x text-gray-300"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="container mt-5">
+						<h3 class="otc">Latest Investments</h3>
+						<table class="table table-dark">
+						  <thead>
+							<tr>
+							  <th scope="col">Date &nbsp; &nbsp;<i class="fas fa-calendar"></i> </th>
+							  <th scope="col">Investment &nbsp; &nbsp;<i class="fas fa-seedling"></i></th>
+							  <th scope="col">Amount &nbsp; &nbsp;<i class="fas fa-money-bill"></i></th>
+							  <th scope="col">Type &nbsp; &nbsp;<i class="fas fa-exchange-alt"></i></th>
+							  <th scope="col">Status &nbsp; &nbsp;<i class="fas fa-check-circle"></i></th>
+							</tr>
+						  </thead>
+						  <tbody>
+							<tr>
+							  <td>May 24, 2023</td>
+							  <td>Wheat</td>
+							  <td class="green">&#x20A6;2,500</td>
+							  <td>Buy</td>
+							  <td class="green">Completed</td>
+							</tr>
+							<tr>
+							  <td>May 22, 2023</td>
+							  <td>Corn</td>
+							  <td class="red">&#x20A6;1,800</td>
+							  <td>Sell</td>
+							  <td class="green">Completed</td>
+							</tr>
+							<tr>
+							  <td>May 18, 2023</td>
+							  <td>Rice</td>
+							  <td class="blue">&#x20A6;3,200</td>
+							  <td>Buy</td>
+							  <td class="green">Completed</td>
+							</tr>
+							<tr>
+							  <td>May 15, 2023</td>
+							  <td>Barley</td>
+							  <td class="orange">&#x20A6;1,500</td>
+							  <td>Sell</td>
+							  <td class="red">Cancelled</td>
+							</tr>
+							<tr>
+							  <td>May 12, 2023</td>
+							  <td>Soybeans</td>
+							  <td class="yellow">&#x20A6;2,000</td>
+							  <td>Buy</td>
+							  <td class="green">Completed</td>
+							</tr>
+						  </tbody>
+						</table>
+					  </div>
+				</div>
+
+			</div>
+		</div>
+		<div id="Tokyo2" class="col-10 tabcontent">
+			<div class="container-fluid products py-5">
+				<h3 class="ps-md-3 otc ">Browse options</h3>
+				<div class="row my-3">
+					<div class="   pcard pcard1">
+						<div class="description mb-4">
+						  <h4 style="font-weight: 900;">CASSAVA MARKET</h4>
+						  <p>By investing in cassava, you become part of a sustainable ecosystem that supports local communities and drives economic growth.</p>
+						  <h2 class="mtc">&#x20A6;4,000 <span class="h6 "> per barn</span></h2>
+						</div>
+						<a href="#" class="mbtn h6 ">Select Option</a>
+					</div>
+					<div class=" pcard pcard2">
+						<div class="description mb-4">
+						  <h3>CORN MARKET</h3>
+						  <p>A versatile and widely consumed cereal crop known for its diverse uses in food, feed, and industrial applications.</p>
+						  <h2 class="mtc">&#x20A6;2,500 <span class="h6 "> per bag</span></h2>
+						</div>
+						<a href="#" class="mbtn ">Select Option</a>
+					</div>
+					<div class=" pcard pcard3">
+						<div class="description mb-4">
+						  <h3>RICE MARKET</h3>
+						  <p>A staple grain that nourishes billions, offering a vital source of sustenance and culinary inspiration across the globe.</p>
+						  <h2 class="mtc">&#x20A6;600 <span class="h6 "> per barrell</span></h2>
+						</div>
+						<a href="#" class="mbtn ">Select Option</a>
+					</div>
+					
+					
+				</div>
+				<div class="row my-3">
+					<div class="   pcard pcard4">
+						<div class="description mb-4">
+						  <h3>MILLET MARKET</h3>
+						  <p> A resilient ancient grain cherished for its nutritional value, drought tolerance, and cultural significance in diverse cuisines. </p>
+						  <h2 class="mtc">&#x20A6;1,000 <span class="h6 "> per barn</span></h2>
+						</div>
+						<a href="#" class="mbtn ">Select Option</a>
+					</div>
+					<div class=" pcard pcard5">
+						<div class="description mb-4">
+						  <h3>WHEAT MARKET</h3>
+						  <p> A fundamental cereal crop that plays a vital role in global food security, providing the foundation for bread, pasta, and countless other products. </p>
+						  <h2 class="mtc">&#x20A6;470 <span class="h6 "> per barn</span></h2>
+						</div>
+						<a href="#" class="mbtn h6 ">Select Option</a>
+					</div>
+					<div class=" pcard pcard6">
+						<div class="description mb-4">
+						  <h3>GARRI MARKET</h3>
+						  <p> A popular West African staple made from cassava, providing a versatile and nutritious base for various traditional dishes and snacks. </p>
+						  <h2 class="mtc">&#x20A6;20000 <span class="h6 "> per barn</span></h2>
+						</div>
+						<a href="#" class="mbtn h6 ">Select Option</a>
+					</div>
+					
+					
+				</div>
+			</div>
+		</div>
+		<div id="Paris" class="col-10 tabcontent text-white">
+			<div class="container mt-5">
+				<div class="row">
+				  <div class="col-md-4 mb-4">
+					<div class="payment-option">
+					  <i class="fas fa-credit-card"></i>
+					  <h5>Credit Card</h5>
+					  <p>Make a deposit using  credit card.</p>
+					  <button class="mbtn">Select</button>
+					</div>
+				  </div>
+				  <div class="col-md-4 mb-4">
+					<div class="payment-option">
+					  <i class="fas fa-university"></i>
+					  <h5>Bank Transfer</h5>
+					  <p>Deposit funds via bank transfer.</p>
+					  <button class="mbtn">Select</button>
+					</div>
+				  </div>
+				  <div class="col-md-4 mb-4">
+					<div class="payment-option">
+					  <i class="fas fa-wallet"></i>
+					  <h5>E-Wallet</h5>
+					  <p>Use an e-wallet to deposit funds.</p>
+					  <button class="mbtn">Select</button>
+					</div>
+				  </div>
+				</div>
+				<div class="row">
+				  <div class="col-md-4 mb-4">
+					<div class="payment-option">
+					  <i class="fa-brands fa-bitcoin"></i>
+					  <h5>Bitcoin</h5>
+					  <p>Deposit using  Bitcoin.</p>
+					  <button class="mbtn">Select</button>
+					</div>
+				  </div>
+				  <div class="col-md-4 mb-4">
+					<div class="payment-option">
+					  <i class="fa-brands fa-paypal"></i>
+					  <h5>Paypal</h5>
+					  <p>Deposit funds via Paypal.</p>
+					  <button class="mbtn">Select</button>
+					</div>
+				  </div>
+				  <div class="col-md-4 mb-4">
+					<div class="payment-option">
+					  <i class="fa-brands fa-google-pay"></i>
+					  <h5>Google Pay</h5>
+					  <p>Pay with Google Pay</p>
+					  <button class="mbtn">Select</button>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  
+		</div>
+		<div id="Too" class="col-10 tabcontent text-white">
+			<div class="container mt-5">
+				<div class="support-section">
+				  <h4>FAQs (Frequently Asked Questions)</h4>
+				  <div class="faq-item">
+					<div class="question">How do I create an account?</div>
+					<div class="answer">To create an account, click on the "Sign Up" button and fill out the registration form.</div>
+				  </div>
+				  <div class="faq-item">
+					<div class="question">How can I deposit funds?</div>
+					<div class="answer">To deposit funds, go to the "Deposit" section in your user dashboard and choose your preferred payment method.</div>
+				  </div>
+				  <div class="faq-item">
+					<div class="question">How do I contact customer support?</div>
+					<div class="answer">You can contact our customer support team by sending an email to support@example.com or by calling our toll-free number.</div>
+				  </div>
+				  <div class="faq-item">
+					<div class="question">What are the investment options available?</div>
+					<div class="answer">We offer a variety of investment options including stocks, bonds, real estate, and agricultural investments. You can explore more details in the "Investment" section of our website.</div>
+				  </div>
+				</div>
+				
+				<div class="support-section mt-4">
+				  <h4>Support Features</h4>
+				  <ul>
+					<li><i class="fas fa-envelope"></i> Email: support@example.com</li>
+					<li><i class="fas fa-phone"></i> Phone: 1-800-123-4567</li>
+					<li><i class="fas fa-comment"></i> Live Chat: Available on our website during business hours</li>
+				  </ul>
+				  <button class="btn btn-primary">Contact Support</button>
+				</div>
+			  </div>
+		</div>
+		<div id="Owerri" class="col-10 tabcontent text-white">
+			<div class="container mt-5">
+				<div class="account-section">
+				  <h4 class="otc">Edit Profile</h4>
+				  <form>
+					<div class="form-group">
+					  <label for="name">Full Name</label>
+					  <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+					</div>
+					<div class="form-group">
+					  <label for="email">Email Address</label>
+					  <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+					</div>
+					<div class="form-group">
+					  <label for="password">Password</label>
+					  <input type="password" class="form-control" id="password" placeholder="Enter your password">
+					</div>
+					<button type="submit" class="obtn">Save Changes</button>
+				  </form>
+				</div>
+				
+				<div class="account-section mt-4">
+				  <h4>User Preferences</h4>
+				  <form>
+					<div class="form-group">
+					  <label for="language" class="otc">Language</label>
+					  <select class="form-control" id="language">
+						<option>English</option>
+						<option>French</option>
+						<option>Spanish</option>
+					  </select>
+					</div>
+					<div class="form-group">
+					  <label for="theme">Theme</label>
+					  <select class="form-control" id="theme">
+						<option>Light</option>
+						<option>Dark</option>
+					  </select>
+					</div>
+					<div class="form-group">
+					  <div class="form-check">
+						<input class="form-check-input" type="checkbox" id="notifications">
+						<label class="form-check-label" for="notifications">Enable Notifications</label>
+					  </div>
+					</div>
+					<button type="submit" class="obtn">Save Preferences</button>
+				  </form>
+				</div>
+			  </div>
+		</div>
+		<div id="Ubo" class="col-10 tabcontent text-white">
+			<div class="container">
+				<div class="row">
+					<div class="payment-form pt-5 text-dark">
+						<h2>Payment Form</h2>
+						<form>
+						  <label>
+							<i class="fas fa-user"></i>
+							Name on Card
+						  </label>
+						  <input type="text" name="cardholder" placeholder="John Doe">
+						  
+						  <label>
+							<i class="fas fa-credit-card"></i>
+							Card Number
+						  </label>
+						  <input type="text" name="cardnumber" placeholder="1234 5678 9012 3456">
+						  
+						  <label>
+							<i class="fas fa-calendar"></i>
+							Expiration Date
+						  </label>
+						  <input type="text" name="expiration" placeholder="MM/YYYY">
+						  
+						  <label>
+							<i class="fas fa-lock"></i>
+							CVV
+						  </label>
+						  <input type="text" name="cvv" placeholder="123">
+						  
+						  <button type="submit">Pay Now</button>
+						</form>
+					  </div>
+				</div>
+			</div>
+		</div>
+
+	</div> 
+
+<script src="./js/jquery-3.2.1.min.js"></script>
+<script src="./js/userdash.js"></script>
+<script src="./fontawesome/js/all.js"></script>
+<script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
